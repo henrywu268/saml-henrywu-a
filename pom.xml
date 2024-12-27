@@ -11,6 +11,7 @@
 
     <properties>
         <opensaml.version>3.2.0</opensaml.version>
+        <maven.compiler.release>17</maven.compiler.release>
     </properties>
     <dependencies>
         <dependency>
@@ -76,4 +77,18 @@
             <url>https://build.shibboleth.net/nexus/content/repositories/releases</url>
         </repository>
     </repositories>
+
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

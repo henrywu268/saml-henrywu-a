@@ -6,14 +6,9 @@ import net.shibboleth.utilities.java.support.resolver.ResolverException;
 import org.opensaml.core.criterion.EntityIdCriterion;
 import org.opensaml.security.credential.Credential;
 import org.opensaml.security.credential.impl.KeyStoreCredentialResolver;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.io.FileInputStream;
 import java.io.InputStream;
-import java.net.URL;
-import java.security.*;
-import java.util.Collections;
+import java.security.KeyStore;
 import java.util.HashMap;
 import java.util.Map;
 

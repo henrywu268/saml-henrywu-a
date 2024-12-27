@@ -3,18 +3,11 @@ package no.steras.opensamlbook.sp;
 import net.shibboleth.utilities.java.support.component.ComponentInitializationException;
 import no.steras.opensamlbook.OpenSAMLUtils;
 import no.steras.opensamlbook.idp.IDPConstants;
-import org.apache.commons.lang.ObjectUtils;
 import org.joda.time.DateTime;
 import org.opensaml.core.config.InitializationException;
 import org.opensaml.core.config.InitializationService;
 import org.opensaml.messaging.context.MessageContext;
 import org.opensaml.messaging.encoder.MessageEncodingException;
-
-import org.opensaml.messaging.handler.MessageHandlerException;
-import org.opensaml.messaging.pipeline.servlet.BasicHttpServletMessagePipeline;
-import org.opensaml.messaging.pipeline.servlet.HttpServletMessagePipeline;
-import org.opensaml.saml.common.SAMLObject;
-import org.opensaml.saml.common.binding.security.impl.SAMLOutboundProtocolMessageSigningHandler;
 import org.opensaml.saml.common.messaging.context.SAMLBindingContext;
 import org.opensaml.saml.common.messaging.context.SAMLEndpointContext;
 import org.opensaml.saml.common.messaging.context.SAMLPeerEntityContext;
