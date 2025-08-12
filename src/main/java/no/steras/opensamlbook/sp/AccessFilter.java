@@ -35,7 +35,7 @@ import java.security.Security;
  */
 public class AccessFilter implements Filter {
     private static Logger logger = LoggerFactory.getLogger(AccessFilter.class);
-
+    //comment
     public void init(FilterConfig filterConfig) throws ServletException {
         JavaCryptoValidationInitializer javaCryptoValidationInitializer = new JavaCryptoValidationInitializer();
         try {
@@ -45,7 +45,7 @@ public class AccessFilter implements Filter {
         }
 
         for (Provider jceProvider : Security.getProviders()) {
-            logger.info(jceProvider.getInfo());
+            logger.info("jceProvider info = " + jceProvider.getInfo());
         }
 
         try {
